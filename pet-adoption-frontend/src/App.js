@@ -3,10 +3,7 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Home from "./pages/Home";
 import Adopt from "./pages/Adopt";
-
-function Contact() {
-  return <h1>Contact Us</h1>;
-}
+import Contact from "./pages/Contact";
 
 function App() {
   return (
