@@ -1,10 +1,7 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Navbar from "./components/Navbar";
-
-function Home() {
-  return <h1>Welcome to Pet Adoption</h1>;
-}
+import Home from "./pages/Home";
 
 function Adopt() {
   return <h1>Available Pets for Adoption</h1>;
