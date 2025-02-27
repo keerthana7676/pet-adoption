@@ -2,10 +2,7 @@ import React from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Home from "./pages/Home";
-
-function Adopt() {
-  return <h1>Available Pets for Adoption</h1>;
-}
+import Adopt from "./pages/Adopt";
 
 function Contact() {
   return <h1>Contact Us</h1>;
