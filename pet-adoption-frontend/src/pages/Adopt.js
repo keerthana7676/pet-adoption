@@ -1,49 +1,24 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import "./Adopt.css";
 
-const petsData = [
-  {
-    id: 1,
-    name: "Buddy",
-    type: "Dog",
-    age: "2 years",
-    image: "https://source.unsplash.com/300x200/?dog",
-  },
-  {
-    id: 2,
-    name: "Whiskers",
-    type: "Cat",
-    age: "1 year",
-    image: "https://source.unsplash.com/300x200/?cat",
-  },
-  {
-    id: 3,
-    name: "Coco",
-    type: "Rabbit",
-    age: "6 months",
-    image: "https://source.unsplash.com/300x200/?rabbit",
-  },
+const pets = [
+  { id: 1, name: "Buddy", type: "Dog", image: "/images/dog1.jpg" },
+  { id: 2, name: "Whiskers", type: "Cat", image: "/images/cat1.jpeg" },
+  { id: 3, name: "Max", type: "Dog", image: "/images/dog2.jpg" },
+  { id: 4, name: "Luna", type: "Cat", image: "/images/cat2.jpg" },
 ];
 
 function Adopt() {
-  const [pets, setPets] = useState([]);
-
-  useEffect(() => {
-    // Simulating fetching from an API
-    setPets(petsData);
-  }, []);
-
   return (
     <div className="adopt-container">
-      <h1>Meet Our Adorable Pets 🐾</h1>
-      <div className="pets-list">
+      <h2>Find Your Perfect Pet</h2>
+      <div className="pet-grid">
         {pets.map((pet) => (
           <div key={pet.id} className="pet-card">
             <img src={pet.image} alt={pet.name} />
-            <h2>{pet.name}</h2>
+            <h3>{pet.name}</h3>
             <p>Type: {pet.type}</p>
-            <p>Age: {pet.age}</p>
-            <button className="btn">Adopt Me</button>
+            <button>Adopt Now</button>
           </div>
         ))}
       </div>
