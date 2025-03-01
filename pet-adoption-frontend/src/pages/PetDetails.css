@@ -1,0 +1,37 @@
+.pet-details {
+    text-align: center;
+    padding: 30px;
+  }
+  
+  .pet-details img {
+    width: 50%;
+    max-width: 400px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .pet-details h2 {
+    margin-top: 15px;
+  }
+  
+  .pet-details p {
+    font-size: 18px;
+    margin: 5px 0;
+  }
+  
+  .adopt-btn {
+    background: #ff6f61;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    margin-top: 15px;
+    transition: background 0.3s;
+  }
+  
+  .adopt-btn:hover {
+    background: #ff3b30;
+  }
+  
