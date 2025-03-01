@@ -10,6 +10,7 @@ function AdoptionForm() {
     email: "",
     address: "",
     reason: "",
+    petId: id, // Store pet ID
   });
 
   const handleChange = (e) => {
@@ -18,9 +19,17 @@ function AdoptionForm() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log("Adoption Request Submitted:", formData);
     
-    // Redirect to success page after submission
+    // Get existing requests from localStorage
+    const existingRequests = JSON.parse(localStorage.getItem("adoptionRequests")) || [];
+
+    // Add new request
+    const updatedRequests = [...existingRequests, formData];
+
+    // Save back to localStorage
+    localStorage.setItem("adoptionRequests", JSON.stringify(updatedRequests));
+
+    // Redirect to success page
     navigate("/success");
   };
 

@@ -5,6 +5,7 @@ import Adopt from "./pages/Adopt";
 import PetDetails from "./pages/PetDetails";
 import AdoptionForm from "./pages/AdoptionForm";
 import Success from "./pages/Success";
+import MyAdoptions from "./pages/MyAdoptions";
 import Contact from "./pages/Contact";
 import Footer from "./components/Footer";
 
@@ -18,6 +19,7 @@ function App() {
         <Route path="/pet/:id" element={<PetDetails />} />
         <Route path="/adopt/:id" element={<AdoptionForm />} />
         <Route path="/success" element={<Success />} />
+        <Route path="/my-adoptions" element={<MyAdoptions />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
       <Footer />

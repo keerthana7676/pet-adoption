@@ -4,7 +4,7 @@ import "./Adopt.css";
 
 const pets = [
   { id: 1, name: "Buddy", type: "Dog", image: "/images/dog1.jpg" },
-  { id: 2, name: "Whiskers", type: "Cat", image: "/images/cat1.jpg" },
+  { id: 2, name: "Whiskers", type: "Cat", image: "/images/cat1.jpeg" },
   { id: 3, name: "Max", type: "Dog", image: "/images/dog2.jpg" },
   { id: 4, name: "Luna", type: "Cat", image: "/images/cat2.jpg" },
 ];
