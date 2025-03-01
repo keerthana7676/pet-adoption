@@ -1,5 +1,5 @@
 import React from "react";
-import { useParams } from "react-router-dom";
+import { useParams, Link } from "react-router-dom";
 import "./PetDetails.css";
 
 const petData = {
@@ -25,7 +25,7 @@ function PetDetails() {
       <p><strong>Age:</strong> {pet.age}</p>
       <p><strong>Breed:</strong> {pet.breed}</p>
       <p>{pet.description}</p>
-      <button className="adopt-btn">Adopt {pet.name}</button>
+      <Link to={`/adopt/${id}`} className="adopt-btn">Adopt {pet.name}</Link>
     </div>
   );
 }
